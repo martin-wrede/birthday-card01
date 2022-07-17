@@ -6,6 +6,7 @@ export  function Archer({ action }) {
   const previousAction = usePrevious(action);
   const { nodes, materials, animations } = useGLTF("/gltf/archer.glb");
   const { actions } = useAnimations(animations, group);
+ /* 
   useEffect(() => {
     if (previousAction) {
       actions[previousAction].fadeOut(0.2);
@@ -14,9 +15,22 @@ export  function Archer({ action }) {
     actions[action].play();
     actions[action].fadeIn(0.2);
   }, [actions, action, previousAction]);
+  */
+
+ 
+  useEffect(() => {
+    console.clear
+   console.log(actions)
+   actions.MoveDown.play()
+  
+   },[])
+
+  
+
+   
   return (
     <group ref={group} dispose={null}>
-      <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+      <group position={[0,-0.2,0]} rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
         <primitive object={nodes.Hips} />
         <skinnedMesh
           geometry={nodes.Erika_Archer_Body_Mesh.geometry}

@@ -60,7 +60,7 @@ position:absolute;
   top:260px;
   margin-top:60px;
   padding-top: 0px;;
- 
+  margin-bottom:50px;
  display: flex;
  justify-content: center;
 /*  align-items: center;*/
@@ -84,8 +84,8 @@ position:absolute;
 h1{
   font-family:'Lobster Two', Calibri, 'Trebuchet MS', sans-serif;
  /* color:rgb(111, 129, 145);*/
-  color:rgba(255, 5, 122, 1); 
-  color:rgb(255, 143, 6); 
+   
+  color:rgba(255, 143, 1,0.9); 
   
   font-size: 3rem;
   display: flex;
@@ -165,4 +165,9 @@ button {
 
 label {
   color: white;
+}
+
+.app1 {
+  top:100px;
+   
 }
