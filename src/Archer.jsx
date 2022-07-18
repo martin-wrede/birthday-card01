@@ -20,8 +20,10 @@ export  function Archer({ action }) {
  
   useEffect(() => {
     console.clear
-   console.log(actions)
-   actions.MoveDown.play()
+   //console.log(actions)
+   // Death, DrawArrow FallLoop, Idle, MoveDown,RunForward, Tpose
+   actions.Idle.play()
+   //actions.MoveDown.play()
   
    },[])
 
